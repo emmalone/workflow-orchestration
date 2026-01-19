@@ -177,7 +177,10 @@ This orchestration system initially serves:
 - **Claude Code Instructions.md** - CC's role and responsibilities
 
 ### For Claude Code
-- **claude.md** - Project context, workflow instructions, task formats
+- **Global claude.md** - `/Users/mark/PycharmProjects/.claude/claude.md`
+  - Automatically loaded in all sessions
+  - Contains general patterns and this project's overview
+  - Continuously updated with learnings
 
 ### Historical Context
 - **chat_conv.md** - Prior AI conversations and decision rationale
