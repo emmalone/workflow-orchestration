@@ -1,0 +1,60 @@
+# Workflow Orchestration System - gitignore
+
+# Ephemeral task states (don't track in git)
+tasks/pending/
+tasks/in-progress/
+tasks/failed/
+
+# Results are ephemeral (regenerated on each run)
+results/
+!results/.gitkeep
+
+# Worker logs and runtime files
+workers/*.log
+workers/__pycache__/
+workers/*.pyc
+
+# Archive - keep structure but not contents
+archive/*/
+!archive/.gitkeep
+
+# Keep templates and completed tasks (audit trail)
+!tasks/templates/
+!tasks/templates/**
+!tasks/completed/
+!tasks/completed/**
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
